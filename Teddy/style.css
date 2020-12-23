@@ -1,0 +1,62 @@
+body{
+    background: #95b7c0;
+    padding: 0;
+    margin: 0;
+  }
+  /* head */
+  .teddy{
+    background-color: #fde7b6;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  /* mouth area */
+  .teddy::before{
+    position: absolute;
+    content: "";
+    background-color: #f5d9ad;
+    height: 120px;
+    width: 150px;
+    border-radius: 50%;
+    top: 130px;
+    left: 50px;
+  }
+  /*  help shape tongue  */
+  .teddy::after{
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    top: 180px;
+    left: 110px;
+    box-shadow: 
+       /*   inside ears   */
+      -95px -180px 0 25px #c2704a,
+      95px -180px 0 25px #c2704a,
+      /*  ears    */
+      -95px -180px 0 50px #fde7b6,
+      95px -180px 0 50px #fde7b6,
+      /*  eye balls    */
+      45px -105px 0 -8px #ffffff,
+      -45px -105px 0 -8px #ffffff,
+      /*    eye sparkle  */
+      50px -91px 0 -12px #ffffff,
+      -50px -91px 0 -12px #ffffff,
+      /*    eyes  */
+      45px -100px 0 4px #5f1912,
+      -45px -100px 0 4px #5f1912,
+      /*  nose    */
+      0 -40px 0 2px #5f1912,
+      /*  tongue    */
+      0 17px 0 3px #5f1912;
+  }
+
+  /* see codepen here: https://codepen.io/ayninur/pen/KKgXqqE */
